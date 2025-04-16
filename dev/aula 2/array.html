@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <script type="text/javascript">
+        //exercicio 1
+        var nome = prompt("Qual o seu nome?");
+        var cor = prompt("Qual a sua cor favorita?");
+        var food = prompt("Qual sua comida favorita?");
+        var music = prompt("O que você gosta de ouvir?");
+
+        var respostas = [nome, cor, food, music];
+
+        document.write('Olá ',nome,', analisei suas preferências e estou vendo que a sua cor favotita é ',cor,', seu prato favorito é ',food,'e que você gosta de ouvir ',music,', agora que já sei de tudo isso, vou selecionar as melhores notícias para você.');
+       
+        //verificando registro
+        //document.write(respostas);
+
+        document.write('<br><br>');
+
+        //exercicio 2
+        var alfabeto = ['a','b','c','d','e','f','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
+        document.write(alfabeto['8'],alfabeto['0'],alfabeto['20'],alfabeto['0'],alfabeto['17'],alfabeto['2'],alfabeto['16'],alfabeto['7'],alfabeto['14'],alfabeto['18']);
+
+
+        //exercicio 3
+        var videos = [];
+        videos['series'] = ['Game of Thrones', 'The Big Bang Theory', 'Friends'];
+        videos['filmes'] = ['Star Wars', 'The Fast and the Furious', 'The Lord of the Rings'];
+
+        document.write(videos['series'][1]);
+        document.write('<br>');
+        document.write(videos['filmes'][2]);
+    </script>
+</body>
+</html>

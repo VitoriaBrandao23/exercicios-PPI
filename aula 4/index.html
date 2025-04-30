@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('p').on('mouseenter mouseleave', function(){
+                $(this).toggleClass('change');
+            })
+        });
+
+    </script>
+
+    <style>
+        .change{
+            background-color: burlywood;
+            border-radius: 5px;
+        }
+
+        p{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <p>teste</p>
+    <p>teste1</p>
+</body>
+</html>

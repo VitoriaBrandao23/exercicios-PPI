@@ -12,9 +12,26 @@
 	<script src="libs/jquery-3.7.1.js"></script>
 	<script>
 		$(document).ready(function(){
-			$('.module');
-			$('#myListIem');
-			$('label[for]');
+			$(".module");
+			$("#myListItem");
+			$("label[for='q']");
+			$("[alt]");
+			$("tbory:even");
+			
+			var qtd = $("h2").filter(function() {
+				var texto = $(this).text();
+				return texto.includes('B') && texto.includes('e');
+			}).length;
+			
+			console.log(qtd);
+
+			$("#myList li[class='current']");
+			$("img:last-child, h3:last-child");
+			var caracteres = $("#myList li[class='current'] ~ li").toArray().reduce(function(soma, li) {
+				return soma + $(li).text().length;
+			});
+
+			console.log(caracteres);
 		})
 	</script>
 

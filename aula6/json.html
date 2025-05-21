@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        $(document).ready(function() {
+            $getJSON("https://github.com/chubin/wttr.in?tab=readme-ov-file");
+
+            var clima = $('button').click(function() {
+                var cidade = document.getElementById('cidade').innerHTML;
+                var nome = encodeURIComponent(cidade);
+                var alterarUrl = "https://wttr.in/" + nome + "?format=j1";
+
+                document.createElement("p").value(cidade);
+
+                
+            });
+        });
+    </script>
+</head>
+<body>
+    <form action="#">
+        <input id="cidade" type="text" placeholder="Escreva o nome da cidade">
+        <button onclick="clima()">Consultar</button>
+    </form>
+</body>
+</html>
